@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nadia ❤️</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:sans-serif;
+background:linear-gradient(135deg,#120014,#320020);
+color:white;
+}
+
+.card{
+width:420px;
+padding:40px;
+border-radius:20px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+text-align:center;
+box-shadow:0 0 40px rgba(255,0,120,0.2);
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ff2a6d;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+h1{
+font-size:36px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h3>A message for you</h3>
+
+<h1>নাদিয়া...</h1>
+
+<p id="text">
+এই ওয়েবসাইটটা বানানোর সময় আমি একটা কথাই ভাবছিলাম...
+হয়তো তুমি এখন আমার উপর একটু রাগ করে আছো।
+</p>
+
+<button onclick="next()">Next Message</button>
+
+</div>
+
+<script>
+
+let messages = [
+
+"এই ওয়েবসাইটটা বানানোর সময় আমি একটা কথাই ভাবছিলাম... হয়তো তুমি এখন আমার উপর একটু রাগ করে আছো।",
+
+"কিন্তু আমি চাই তুমি এই কয়েকটা মেসেজ শুধু শান্ত হয়ে পড়ো...",
+
+"কারণ এগুলো শুধু লেখা না... এগুলো আমার হৃদয়ের ভেতরের কথা।",
+
+"নাদিয়া, তুমি আমার জীবনের খুব সুন্দর একটা অংশ।",
+
+"তুমি হাসলে আমার পৃথিবীটা আলোকিত হয়ে যায়।",
+
+"আর তুমি দূরে গেলে সবকিছু ফাঁকা লাগে।",
+
+"যাই হোক না কেন... আমি এখনো তোমাকে অনেক ভালোবাসি। ❤️"
+
+]
+
+let i=0
+
+function next(){
+
+i++
+
+if(i < messages.length){
+
+document.getElementById("text").innerText = messages[i]
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
